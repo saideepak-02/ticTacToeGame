@@ -99,8 +99,9 @@ btnRef.forEach((element) => {
     //Increment count on each click
     count += 1;
     if (count == 9) {
-      winChecker();
+      
       drawFunction();
+      winChecker();
       console.log("inside draw")
     }console.log(count)
     //Check for win on every click
