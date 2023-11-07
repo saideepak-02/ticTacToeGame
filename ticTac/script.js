@@ -98,12 +98,14 @@ btnRef.forEach((element) => {
     }
     //Increment count on each click
     count += 1;
-    if (count == 9) {s
+    if (count == 9) {
+      winChecker();
       drawFunction();
       console.log("inside draw")
     }console.log(count)
     //Check for win on every click
-    winChecker();
+    if(count!=9){
+    winChecker();}
   });
 });
 //Enable Buttons and disable popup on page load
